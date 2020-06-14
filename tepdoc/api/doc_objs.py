@@ -1,10 +1,9 @@
 import os
 import json
 
-from tepdoc.api.assets import get_mk_asset_dir_path
+from tepdoc.api.assets import get_mk_asset_dir_path, get_root_read_json_path
 
-ROOT_READ_JSON = os.path.join(get_mk_asset_dir_path(), 'root_read.json')
-
+ROOT_READ_JSON = get_root_read_json_path()
 ROOT_INFO_DEFAULT = 'Enter information about the root directory.'
 SUBDIR_INFO_DEFAULT = 'Enter information about subdirectory'
 

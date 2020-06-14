@@ -3,7 +3,7 @@ from tepdoc.api.doc_objs import DocRoot
 import os
 
 if __name__ == '__main__':
-    with open('doc_template.html', 'r') as f:
+    with open('templates/doc_template.html', 'r') as f:
         template_str = f.read()
 
     tmp = jn.Template(template_str)
