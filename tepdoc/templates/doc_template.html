@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="assets/main.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Dir Info Template</title>
+</head>
+<body>
+<header>
+    <div class="header-content">
+        <h1>{{ doc_root.name }}</h1>
+        <h4 class="header-info">{{doc_root.info}}</h4>
+    </div>
+</header>
+
+<main>
+    {% for sub_dir in doc_root.sub_dirs %}
+    <section>
+        <h3>{{sub_dir.name}}</h3>
+        <div class="content">
+            <p>{{sub_dir.info}}</p>
+            <p class="file-btn">Files</p>
+            <ul class="file-list-initial">
+                {% for file in sub_dir.files %}
+                <li>
+                    {{file.name}}
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </section>
+    {% endfor %}
+</main>
+
+<script src="assets/script.js"></script>
+</body>
+</html>

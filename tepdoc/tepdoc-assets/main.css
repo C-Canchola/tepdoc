@@ -1,0 +1,101 @@
+header{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: left;
+    background-color: royalblue;
+    color: #d3deec;
+}
+.header-content{
+    padding-left: 12px;
+}
+.header-info{
+    margin-bottom: 2px;
+}
+h1{
+    margin-top:2px;
+}
+main{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: left;
+    padding-left: 24px;
+    padding-top:40px;
+}
+.content{
+    padding-left: 2rem;
+}
+.file-btn{
+    background-color: royalblue;
+    color:whitesmoke;
+    width:60px;
+    text-align: center;
+    cursor:pointer;
+    transition:width 0.5s ease;
+    border-radius: 4px;
+    align-content: center;
+
+}
+.file-btn:hover{
+    width:100px;
+}
+.btn-toggle-on{
+    width:100px;
+    animation:toggle-btn-on;
+    animation-duration:0.75s;
+    animation-fill-mode:forwards;
+}
+.btn-toggle-off{
+    animation:toggle-btn-off;
+    animation-duration:0.75s;
+    animation-fill-mode:forwards;
+}
+.file-list-initial{
+    opacity: 0;
+    font-size: 0;
+}
+.file-list{
+    animation:hide-content;
+    animation-duration:0.75s;
+    animation-fill-mode:forwards;
+}
+.visible{
+    animation:show-content;
+    animation-duration:0.75s;
+    animation-fill-mode:forwards;
+}
+@keyframes show-content {
+  0% {
+    opacity: 0;
+    font-size:0;
+  }
+  100% {
+    opacity: 1;
+    font-size:14px;
+  }
+}
+@keyframes hide-content {
+    0% {
+        opacity: 1;
+        font-size: 14px;
+    }
+    100% {
+        opacity: 0;
+        font-size: 0;
+    }
+}
+@keyframes toggle-btn-on {
+    0%{
+        background-color: royalblue;
+    }
+    100%{
+        background-color: deepskyblue;
+    }
+}
+@keyframes toggle-btn-off {
+    0%{
+        background-color: deepskyblue;
+    }
+    100%{
+        background-color: royalblue;
+    }
+}

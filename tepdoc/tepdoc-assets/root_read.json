@@ -1,0 +1,21 @@
+{
+    "name": "test_root",
+    "info": "Information with json using file ino.",
+    "sub_dirs": {
+        "1125899907875080": {
+            "name": "test_sub_dir_1",
+            "info": "1",
+            "ino": 1125899907875080
+        },
+        "28428972648805818": {
+            "name": "test_sub_dir_2",
+            "info": "2",
+            "ino": 28428972648805818
+        },
+        "144959613006318396": {
+            "name": "test_sub_dir_3",
+            "info": "3",
+            "ino": 144959613006318396
+        }
+    }
+}
