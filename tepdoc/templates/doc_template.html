@@ -6,12 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel='stylesheet'>
     <link rel="stylesheet" href="tepdoc-assets/main.css">
-    <link rel="stylesheet" href="tepdoc-assets/style.css">
+    <script src="https://kit.fontawesome.com/e564a7716b.js" crossorigin="anonymous"></script>
     <title>{{doc_root.name}} - Info</title>
 </head>
 <body>
-<h1 class="label">Directory - <em>{{ doc_root.name }}</em></h1>
-
+<div class="top-bar">
+    <h1 class="label">Directory - {{ doc_root.name }}</h1>
+    <div class="tepdoc">
+            <p>
+    <i class="fab fa-github"></i>
+    <i class="fab fa-python"></i>
+    Made with tepdoc</p>
+    </div>
+</div>
 <div class="container">
 <header>
         <h1>Directory Description</h1>

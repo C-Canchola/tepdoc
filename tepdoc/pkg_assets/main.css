@@ -1,23 +1,39 @@
 body{
     font-family: 'Roboto', serif;
 }
-.container{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: left;
-}
-.label{
-    margin-left:3%;
+.top-bar{
+    display:flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-left: 3%;
+    padding-right:1%;
+    background-color:royalblue;
+    color:white;
 }
 header{
-    width:15%;
-    margin-left: 3%;
-    margin-right: 2%;
+    padding-right: 2%;
 }
-main{
-    width:78%;
-    margin-left: 2%;
+.container{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    padding-left: 3%;
+    padding-right: 3%;
 }
+.tepdoc{
+    cursor:pointer;
+
+}
+section{
+    border-bottom: lightgray;
+    border-bottom-style: solid;
+    border-bottom-width: thin;
+}
+.tepdoc:hover{
+    color: deepskyblue;
+}
+
 .content{
     padding-left: 2rem;
 }
