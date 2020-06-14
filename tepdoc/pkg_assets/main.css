@@ -1,25 +1,22 @@
-header{
+body{
+    font-family: 'Roboto', serif;
+}
+.container{
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: row wrap;
     justify-content: left;
-    background-color: royalblue;
-    color: #d3deec;
 }
-.header-content{
-    padding-left: 12px;
+.label{
+    margin-left:3%;
 }
-.header-info{
-    margin-bottom: 2px;
-}
-h1{
-    margin-top:2px;
+header{
+    width:15%;
+    margin-left: 3%;
+    margin-right: 2%;
 }
 main{
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: left;
-    padding-left: 24px;
-    padding-top:40px;
+    width:78%;
+    margin-left: 2%;
 }
 .content{
     padding-left: 2rem;

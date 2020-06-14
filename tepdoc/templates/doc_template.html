@@ -4,29 +4,32 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel='stylesheet'>
     <link rel="stylesheet" href="tepdoc-assets/main.css">
     <link rel="stylesheet" href="tepdoc-assets/style.css">
     <title>{{doc_root.name}} - Info</title>
 </head>
 <body>
+<h1 class="label">Directory - <em>{{ doc_root.name }}</em></h1>
+
+<div class="container">
 <header>
-    <div class="header-content">
-        <h1>{{ doc_root.name }}</h1>
-        <h4 class="header-info">{{doc_root.info}}</h4>
-    </div>
+        <h1>Directory Description</h1>
+        <h3 class="header-info">{{doc_root.info}}</h3>
 </header>
 
 <main>
+    <h1>Sub Directory Info</h1>
     {% for sub_dir in doc_root.sub_dirs %}
     <section>
-        <h3>{{sub_dir.name}}</h3>
+        <h2>Sub Directory - <em>{{sub_dir.name}}</em></h2>
         <div class="content">
-            <p>{{sub_dir.info}}</p>
+            <h4>Description - {{sub_dir.info}}</h4>
             <p class="file-btn">Files</p>
             <ul class="file-list-initial">
                 {% for file in sub_dir.files %}
                 <li>
-                    {{file.name}}
+                    <h4>{{file.name}}</h4>
                 </li>
                 {% endfor %}
             </ul>
@@ -34,7 +37,7 @@
     </section>
     {% endfor %}
 </main>
-
+</div>
 <script src="tepdoc-assets/script.js"></script>
 </body>
 </html>

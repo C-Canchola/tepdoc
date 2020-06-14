@@ -68,6 +68,7 @@ def render(ctx, open):
 
     """
 
+    assets.initialize_asset_dir()
     rdr.render_template(ctx.obj['ROOT_PATH'])
 
     if open:
