@@ -1,12 +1,9 @@
-import click
 import os
 
-from functools import wraps
+import click
 
 import tepdoc.api.assets as assets
 import tepdoc.api.render as rdr
-
-from tepdoc.api.doc_objs import DocRoot
 
 
 def validate_root_path(root_path: str):
